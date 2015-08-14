@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Dashboard</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/device_width_1200_responsive.css" rel="stylesheet">
     <link href="css/device_width_992_responsive.css" rel="stylesheet">
     <link href="css/device_width_768_responsive.css" rel="stylesheet">
@@ -19,12 +20,13 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script src="js/modernizr.js"></script>
   </head>
   <body>
 <div id="wrapper-site">
 <div class="container-fluid">
     <div class="row">
-        <div class="col-lg-2 col-md-2 no-padding sidebar">
+        <div class="col-lg-2 col-md-2 no-padding col-left">
             <section id="header-left">
                 <nav class="navbar navbar-default">
                   <div class="container-fluid">
@@ -36,9 +38,90 @@
                   </div>
                 </nav>
             </section>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 ">   
+                    <nav class="sidebar hidden-xs hidden-sm">
+                        <ul id="nav" class="nav disenav">
+                            <li><a href="#sdk">SDK</a>
+                                <ul>
+                                    <li><a href="#v3sdk"><i class="fa fa-caret-right"></i>V3 SDK</a></li>
+                                    <li><a href="#chatsdk"><i class="fa fa-caret-right"></i>Chat SDK</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#webapp">Web Application Support</a>
+                                <ul>
+                                    <li><a href="#thd"><i class="fa fa-caret-right"></i>THD</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#middleware">Middelware</a>
+                                <ul>
+                                    <li><a href="#lazycoder"><i class="fa fa-caret-right"></i>LC-Lazy coder</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#inlab">inLAB</a>
+                                <ul>
+                                    <li><a href="#unity"><i class="fa fa-caret-right"></i>Unity</a></li>
+                                    <li><a href="#xamarin"><i class="fa fa-caret-right"></i>Xamarin</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
         
-        <div class="col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-2 no-padding">
+        <div class="col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-2">
+            
+            
+            <section id="body-wrapper">
+                <div id="body-content">
+                    <div class="row">
+                        
+                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                              <!-- Indicators -->
+                              <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                              </ol>
+
+                              <!-- Wrapper for slides -->
+                              <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                  <img data-src="holder.js/1600x400/auto/#777:#555/text:First slide" alt="First slide [1400x400]" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDkwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzkwMHg1MDAvYXV0by8jNzc3OiM1NTUvdGV4dDpGaXJzdCBzbGlkZQpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE0ZjJhNWQ1MjU2IHRleHQgeyBmaWxsOiM1NTU7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6NDVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTRmMmE1ZDUyNTYiPjxyZWN0IHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjNzc3Ii8+PGc+PHRleHQgeD0iMzA4LjI4OTA2MjUiIHk9IjI3MC4xIj5GaXJzdCBzbGlkZTwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
+                                  <div class="carousel-caption">
+                                    ...
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <img data-src="holder.js/1600x400/auto/#666:#444/text:Second slide" alt="Second slide [1600x400]" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDkwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzkwMHg1MDAvYXV0by8jNjY2OiM0NDQvdGV4dDpTZWNvbmQgc2xpZGUKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xNGYyYTY5ODA5MiB0ZXh0IHsgZmlsbDojNDQ0O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjQ1cHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE0ZjJhNjk4MDkyIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzY2NiIvPjxnPjx0ZXh0IHg9IjI2NC45NDUzMTI1IiB5PSIyNzAuMSI+U2Vjb25kIHNsaWRlPC90ZXh0PjwvZz48L2c+PC9zdmc+" data-holder-rendered="true">
+                                  <div class="carousel-caption">
+                                    ...
+                                  </div>
+                                </div>
+                                <div class="item">
+                                  <img data-src="holder.js/1600x400/auto/#555:#333/text:Third slide" alt="Third slide [1600x400]" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDkwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzkwMHg1MDAvYXV0by8jNTU1OiMzMzMvdGV4dDpUaGlyZCBzbGlkZQpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE0ZjJhNjlkYjA2IHRleHQgeyBmaWxsOiMzMzM7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6NDVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTRmMmE2OWRiMDYiPjxyZWN0IHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjNTU1Ii8+PGc+PHRleHQgeD0iMjk4LjMxMjUiIHk9IjI3MC4xIj5UaGlyZCBzbGlkZTwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true">
+                                  <div class="carousel-caption">
+                                    ...
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- Controls -->
+                              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </div>
+                        
+                        
+                    </div>
+                </div>
+            </section>
             <div class="row">
                 <section id="header">
                     <nav class="navbar navbar-default">
@@ -51,15 +134,26 @@
                       </div>
                     </nav>
                 </section>
-            </div>
-            
-            <section id="body-wrapper">
-                <div id="body-content">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12">body</div>
+                
+                <div class="col-lg-12 col-md-12">
+                    <div class="page-header">
+                        <h1>All Projects</h1>
                     </div>
                 </div>
-            </section>
+                <div class="col-lg-3 col-md-3">
+                    project 1
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    project 1
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    project 1
+                </div>
+                <div class="col-lg-3 col-md-3">
+                    project 1
+                </div>
+                
+            </div>
         </div>
         
         
@@ -70,34 +164,7 @@
 <section id="content">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-2 col-md-2 ">   
-                <nav class="sidebar hidden-xs hidden-sm">
-                    <ul id="nav" class="nav disenav">
-                        <li><a href="#sdk">SDK</a>
-                            <ul>
-                                <li><a href="#v3sdk">V3 SDK</a></li>
-                                <li><a href="#chatsdk">Chat SDK</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#webapp">Web Application Support</a>
-                            <ul>
-                                <li><a href="#thd">THD</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#middleware">Middelware</a>
-                            <ul>
-                                <li><a href="#lazycoder">LC-Lazy coder</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#inlab">inLAB</a>
-                            <ul>
-                                <li><a href="#unity">Unity</a></li>
-                                <li><a href="#xamarin">Xamarin</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+            
             <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
                 <div class="row hidden-xs">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
@@ -294,6 +361,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/docs.min.js"></script>
   </body>
 </html>
