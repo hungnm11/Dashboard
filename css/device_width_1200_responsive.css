@@ -87,8 +87,8 @@
         color: #000;
     }
     
-    nav.sidebar #nav.nav>li {
-        
+    nav.sidebar #nav li a{
+        border-bottom: 1px solid #505151;
     }
     
     nav.sidebar #nav.nav>li>a{
@@ -111,6 +111,7 @@
     
     nav.sidebar #nav.nav>li>ul>li {
         list-style: none;
+        
     }
     
     nav.sidebar #nav.nav>li>ul>li a{
@@ -129,12 +130,15 @@
         text-align: center;
     }
     
+    
     nav.sidebar #nav.nav>li> a:hover{
         color: #111421;
+        border-left: 5px solid #ED6C44;
     }
     
     nav.sidebar #nav.nav>li>ul>li a:hover{
         background-color: #111421;
+        border-left: 5px solid #ED6C44;
     }
     
 	#projects {
