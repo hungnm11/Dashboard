@@ -147,6 +147,7 @@
 		list-style: none;
 		min-height: 100%;
 		float: left;
+		background: #000;
 	}
 	
 	#projects li .work-project {
