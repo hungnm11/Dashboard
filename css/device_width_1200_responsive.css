@@ -21,7 +21,7 @@
     
     .navbar-default {
         border-color: transparent;
-        background-color: #777777;
+        background-color: #ED6C44;
     }
     
     .navbar-default .navbar-brand {
@@ -44,7 +44,7 @@
     }
     
     #header-left .navbar-default {
-        background-color: #ED6C44;
+        background-color: #424242;
         height: auto;
     }
     
@@ -96,7 +96,7 @@
     }
     
     nav.sidebar #nav.nav>li a{
-        color: #fff;
+        color: #ED6C44;
         text-decoration: none;
         -webkit-transition: background .2s linear 0s;
         -moz-transition: background .2s linear 0s;
@@ -220,5 +220,17 @@
 		text-overflow: ellipsis;
 		text-align: left;
 	}
+    
+    .modal-content {
+        border-radius: 0;
+    }
 	
+    #projects button[type=button], #projects .btn {
+        margin-top: 15px;
+        border-radius: 0px;
+    }
+    
+    #myModal .btn {
+        border-radius: 0px;
+    }
 }
