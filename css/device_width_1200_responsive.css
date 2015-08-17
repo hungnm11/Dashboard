@@ -107,6 +107,7 @@
     
      nav.sidebar #nav.nav li ul {
          padding: 0;
+         display: none;
      }
     
     nav.sidebar #nav.nav>li>ul>li {
