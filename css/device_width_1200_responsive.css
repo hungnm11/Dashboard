@@ -2,6 +2,7 @@
 @media (min-width: 1200px) {
     body {
         font-family: 'Lato', sans-serif;
+        text-shadow: 0 1px 3px rgba(0,0,0,.5);
     }
     
     .navbar {
@@ -82,8 +83,7 @@
         padding: 20px 0;
         position: relative;
         z-index: 5;
-        display: table-cell;
-        vertical-align: middle;
+        padding-bottom: 45px;
     }
     
     #dash-sdk .sdk-inner h1{
@@ -269,15 +269,14 @@
     
     .sdk-inner {
         min-height: 350px;
-        height: 350px;
     }
     
     .shape-rectangle-left {
         height: 1000px;
         width: 0;
         border-top: 0px transparent;
-        border-left: 350px solid #011422;
-        border-right: 0px solid #011422;
+        border-left: 450px solid #9db8c3;
+        border-right: 0px solid #9db8c3;
         border-bottom: 160px solid transparent;
         -webkit-transform: rotate(-90deg) skew(0deg);
         -moz-transform: rotate(-90deg) skew(0deg);
@@ -285,24 +284,24 @@
         transform: rotate(-90deg) skew(0deg);
         position: absolute;
         top: -325px;
-        left: 0;
+        left:-350px;
         z-index: 3;
     }
     
     .shape-rectangle-mid {
-        height: 1000px;
+        height: 1500px;
         width: 0;
         border-top: 0px transparent;
-        border-left: 350px solid #34495e;
-        border-right: 0px solid #34495e;
+        border-left: 450px solid #7fa3b3;
+        border-right: 0px solid #7fa3b3;
         border-bottom: 160px solid transparent;
         -webkit-transform: rotate(-90deg) skew(0deg);
         -moz-transform: rotate(-90deg) skew(0deg);
         -o-transform: rotate(-90deg) skew(0deg);
         transform: rotate(-90deg) skew(0deg);
         position: absolute;
-        top: -325px;
-        left: 600px;
+        top: -575px;
+        left: 700px;
         z-index: 2;
     }
     
@@ -310,8 +309,8 @@
         height: 1000px;
         width: 0;
         border-top: 0px transparent;
-        border-left: 350px solid #7fa3b3;
-        border-right: 0px solid #7fa3b3;
+        border-left: 450px solid #c9d8df;
+        border-right: 0px solid #c9d8df;
         border-bottom: 160px solid transparent;
         -webkit-transform: rotate(-90deg) skew(0deg);
         -moz-transform: rotate(-90deg) skew(0deg);
@@ -323,4 +322,30 @@
         z-index: 1;
     }
     
+    .v3sdk-inner {
+        z-index: 5;
+        position: relative;
+        color: #fff;
+    }
+    
+    .chatsdk-inner {
+        z-index: 5;
+        position: relative;
+        color: #fff;
+    }
+    
+    #dash-sdk .page-header {
+        z-index: 5;
+        position: relative;
+    }
+    
+    #dash-sdk h1 {
+        position: relative;
+        z-index: 5;
+        color: #fff;
+    }
+    
+    .page-header {
+        margin: 0;
+    }
 }
