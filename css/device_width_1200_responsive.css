@@ -20,7 +20,7 @@
     }
     
     .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-    color: #555;
+    color: #E74C3C;
     background-color: #00AEEB;
 }
     
@@ -46,8 +46,8 @@
     .color-dashboard {
         color: #fff;
         background-color: #00AEEB;
-        min-height: 450px;
-        height: 450px;
+        min-height: 550px;
+        height: 550px;
         display: table;
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7fa3b3+0,d8e1e6+64,c9d8df+73,c9d8df+73,98b4c0+100 */
         background: #7fa3b3; /* Old browsers */
@@ -72,7 +72,7 @@
     }
     
     #dash-sdk {
-        background-color: #F7F7F7;
+        background-color: #fff;
     }
     
     #dash-sdk .sdk-row {
@@ -87,7 +87,6 @@
     }
     
     #dash-sdk .sdk-inner h1{
-        color: #fff;
         font-weight: bold;
         font-size: 52px;
     }
@@ -174,7 +173,7 @@
     
     .left-parallegram {
         width: 55%;
-        height: 450px;
+        height: 550px;
         -webkit-transform: skew(-20deg);
         -moz-transform: skew(-20deg);
         -o-transform: skew(-20deg);
@@ -211,7 +210,7 @@
     
     .right-parallegram {
         width: 55.5%;
-        height: 450px;
+        height: 550px;
         -webkit-transform: skew(-20deg);
         -moz-transform: skew(-20deg);
         -o-transform: skew(-20deg);
@@ -272,20 +271,20 @@
     }
     
     .shape-rectangle-left {
-        height: 1000px;
-        width: 0;
-        border-top: 0px transparent;
-        border-left: 450px solid #9db8c3;
-        border-right: 0px solid #9db8c3;
-        border-bottom: 160px solid transparent;
-        -webkit-transform: rotate(-90deg) skew(0deg);
-        -moz-transform: rotate(-90deg) skew(0deg);
-        -o-transform: rotate(-90deg) skew(0deg);
-        transform: rotate(-90deg) skew(0deg);
+        height: 350px;
+        position: relative;
+        background: red;
+        
+    }
+    
+    .shape-rectangle-left:before {
+        content: '';
         position: absolute;
-        top: -325px;
-        left:-350px;
-        z-index: 3;
+        top: 0;
+        left: 0;
+        border-top: 80px solid #fff;
+        border-left: 280px solid red;
+        width: 0;
     }
     
     .shape-rectangle-mid {
@@ -325,13 +324,13 @@
     .v3sdk-inner {
         z-index: 5;
         position: relative;
-        color: #fff;
+        text-shadow: 0 1px 3px rgba(0,0,0,.2);
     }
     
     .chatsdk-inner {
         z-index: 5;
         position: relative;
-        color: #fff;
+        text-shadow: 0 1px 3px rgba(0,0,0,.2);
     }
     
     #dash-sdk .page-header {
@@ -342,10 +341,80 @@
     #dash-sdk h1 {
         position: relative;
         z-index: 5;
-        color: #fff;
     }
     
     .page-header {
         margin: 0;
+    }
+    
+    #webapp {
+        background: #E74C3C;
+        color: #fff;
+    }
+    
+    #webapp .webapp-inner {
+        padding: 20px 0;
+        position: relative;
+        z-index: 5;
+        padding-bottom: 45px;
+        height: 500px;
+    }
+    
+    #webapp .webapp-inner h1 {
+        font-weight: bold;
+        font-size: 52px;
+        color: #fff;
+    }
+    
+    .icon-webapp {
+        margin-top: 45px;
+    }
+    
+    .icon-webapp .fa-6x {
+        font-size: 20em;
+    }
+    
+    #middleware {
+        background: #ECF0F1;
+        color: #34495E;
+        text-shadow: 0 1px 3px rgba(0,0,0,0);
+    }
+    
+    #middleware .middleware-inner {
+        padding: 20px 0;
+        position: relative;
+        z-index: 5;
+        padding-bottom: 45px;
+        height: 500px;
+        min-height: 500px;
+    }
+    
+    #inlab {
+        background: #7fa3b3;
+        color: #fff;
+        text-shadow: 0 1px 3px rgba(0,0,0,.5);
+    }
+    
+    #inlab .inlab-inner {
+        padding: 20px 0;
+        position: relative;
+        z-index: 5;
+        padding-bottom: 45px;
+        height: 350px;
+        min-height: 350px;
+    }
+    
+    .img-thumbnail {
+        border-radius: 0;
+    }
+    
+    #footer a{
+        color: #34495E;
+        text-shadow: 0 1px 3px rgba(0,0,0,0);
+    }
+    
+    #footer a:hover {
+        background-color: #E74C3C;
+        color: #fff;
     }
 }
